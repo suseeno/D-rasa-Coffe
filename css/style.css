@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #ffff;
-  /* min-height: 4000px; */
+  min-height: 4000px;
 }
 
 /* navbar */
@@ -209,6 +209,19 @@ body {
   font-weight: 100;
   font-size: 1.2rem;
   line-height: 1.6;
+}
+/* section Contact */
+
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+  flex-wrap: wrap;
+}
+.contact .row .maps {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
 }
 /* media Queries */
 
