@@ -1,6 +1,7 @@
 :root {
   --primary: #b6895b;
   --bg: #010101;
+  --btn: #ffff;
 }
 html {
   scroll-behavior: smooth;
@@ -79,7 +80,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../img/a.jpeg");
+  background-image: url("../img/s.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -132,7 +133,9 @@ body {
   border-radius: 0.5rem;
   text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
-
+.menu a:hover {
+  color: var(--bg);
+}
 /* endhero */
 
 /* About Section */
@@ -142,14 +145,16 @@ body {
 }
 .about h2,
 .menu h2,
-.contact h2 {
+.contact h2,
+.visi h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
 }
 .about h2 span,
 .menu h2 span,
-.contact span {
+.contact span,
+.visi h2 span {
   color: var(--primary);
 }
 .about .row {
@@ -200,7 +205,20 @@ body {
 .menu .row .menu-card .menu-card-title {
   margin: 1rem auto 0.5rem;
 }
+.menu .row .menu-card .btn {
+  padding: 1rem 3rem;
+  color: #ffff;
+  display: inline-block;
+  background-color: var(--primary);
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  cursor: pointer;
+  border-radius: 2rem;
+}
 
+.menu .row .menu-card a:hover {
+  color: var(--bg);
+}
 .menu h2 {
   margin-bottom: 1.5rem;
 }

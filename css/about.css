@@ -142,7 +142,8 @@ body {
 }
 .about h2,
 .menu h2,
-.contact h2 {
+.contact h2,
+.history h3 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 3rem;
@@ -254,6 +255,37 @@ body {
   cursor: pointer;
   border-radius: 0.3rem;
 }
+
+.history h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.history h3 span {
+  color: var(--primary);
+}
+.history .row {
+  display: flex;
+}
+.history .row .content {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+}
+.history .row .content p {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  font-weight: 100;
+  line-height: 1.6;
+}
+.history .row .about-img {
+  flex: 1 1 35rem;
+}
+.history .row .about-img img {
+  width: 100%;
+}
+.history .row .about-img img {
+  margin-bottom: 2rem 0.8rem;
+}
 /* footer */
 
 footer {
@@ -332,6 +364,22 @@ footer .credit a {
     margin-top: 1.3rem;
     font-size: 1.6rem;
   }
+  .history .row {
+    flex-wrap: wrap;
+  }
+  .history .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center;
+  }
+  .history .row .content {
+    padding: 0;
+  }
+  .history .row .content h3 {
+    margin-top: 1.3rem;
+    font-size: 1.6rem;
+  }
+
   .contact .row {
     flex-wrap: wrap;
   }
